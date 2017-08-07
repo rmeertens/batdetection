@@ -33,4 +33,5 @@ RUN pip install Cython --install-option="--no-cython-compile"
 RUN pip install tflearn scikit-image scikit-learn pandas keras
 RUN pip install librosa
 WORKDIR "/notebooks" 
+ADD . /notebooks
 CMD ["/run_jupyter.sh"]
